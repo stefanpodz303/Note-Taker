@@ -1,21 +1,36 @@
-// Require Dependencies
+
 const express = require("express");
 const fs = require("fs");
 const path = require('path');
+const util = require('util');
+// const writeFile = util.promisify(fs.writeFile);
+// const readFile = util.promisify(fs.readFile);
+// const { v4: uuidv4 } = require('uuid');
 
-// Initialize express app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
-// Setup data parsing
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname));
+app.use(express.static('public'));
 
-//Require routes file
-require('./routes/routes')(app);
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
 
-// Setup listener
-app.listen(PORT, function() {
+app.get('/api/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+app.post('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+app.delete('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
-});  
+});
