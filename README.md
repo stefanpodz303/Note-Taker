@@ -1,5 +1,7 @@
 # Note-Taker
 
+![APM](https://img.shields.io/badge/license-ISC-blue)
+
 ## Video Demonstration Link
 
 https://drive.google.com/file/d/1DKbAdgqdm1V3hfBYt5k-Y3Orf0Azp4Uf/view
