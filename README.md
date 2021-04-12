@@ -15,6 +15,7 @@ https://drive.google.com/file/d/1DKbAdgqdm1V3hfBYt5k-Y3Orf0Azp4Uf/view
 - [Contributors](#Contributors)
 - [Test](#Test)
 - [Repository Link](#Repository)
+- [Deployed Link](#Deployed)
 - [GitHub Info](#GitHub) 
 
 ## Description 
@@ -40,6 +41,9 @@ None
 
 ## Repository
 https://github.com/stefanpodz303/Note-Taker
+
+## Deployed
+https://aqueous-reef-89621.herokuapp.com/
 
 ## GitHub
 - stefanpodz303
