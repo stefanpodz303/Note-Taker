@@ -8,14 +8,14 @@ const readFile = util.promisify(fs.readFile);
 
 
 module.exports = (app) => {
+     // Setup the /api/notes get route
     app.get('/api/notes', (req, res) => {
-        // res.json(notesData)
         readFile('db/db.json', 'utf8')
             .then((notesData) => {
                 res.json(JSON.parse(notesData))
             })
     });
-
+    // Setup the /api/notes post route
     app.post('/api/notes', (req, res) => {
         readFile('db/db.json', 'utf8')
             .then((notesData) => {
@@ -31,7 +31,7 @@ module.exports = (app) => {
             })
     });
 
-    
+    // Deletes a note with specific id
     app.delete('/api/notes/:id', (req, res) => {
         const choice = req.params.id;
         console.log(res);

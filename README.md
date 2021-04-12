@@ -9,6 +9,7 @@ https://drive.google.com/file/d/1DKbAdgqdm1V3hfBYt5k-Y3Orf0Azp4Uf/view
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [License](#License)
+- [Technologies Used](#Technologies)
 - [Contributors](#Contributors)
 - [Test](#Test)
 - [Repository Link](#Repository)
@@ -25,6 +26,9 @@ This application makes it faster and easier for the user to generate and save an
 
 ## License
 ISC
+
+## Technologies
+Node.js, Express.js, Font Awesome, Bootstrap
 
 ## Contributors
 Stefan Podzinski
